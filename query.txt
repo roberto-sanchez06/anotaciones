@@ -1,0 +1,19 @@
+--create database DepreciacionDB
+
+use DepreciacionDB
+
+--create table ActivoFijo(
+--	id int primary key identity(1,1),
+--	nombre varchar (50) not null,
+--	[description] varchar (200) not null,
+--	amount decimal (9,2) not null,
+--	amountResidual decimal (9,2) not null,
+--	years int not null,
+--	code varchar (50) not null,
+--	[status] varchar(50) not null,
+--	isActive bit
+--)
+
+select * from ActivoFijo
+
+exec sp_columns ActivoFijo
