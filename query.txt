@@ -17,3 +17,9 @@ use DepreciacionDB
 select * from ActivoFijo
 
 exec sp_columns ActivoFijo
+
+dotnet tool install --global dotnet-ef
+git clone https://github.com/yassermembreno/DepreciationDBApp.git
+cd 
+dotnet ef migrations add DepreciationDB --project DepreciationDBApp.Domain
+dotnet ef database update --project DepreciationDBApp.Domain
