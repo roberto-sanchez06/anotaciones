@@ -1,3 +1,5 @@
+Instalar los nuggets: MicrosfotEFCore.Design, SQLServer, MicrosoftExtensions.Configuration, Hosting
+
 --create database DepreciacionDB
 
 use DepreciacionDB
