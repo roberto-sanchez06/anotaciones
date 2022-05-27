@@ -25,3 +25,9 @@ git clone https://github.com/yassermembreno/DepreciationDBApp.git
 cd 
 dotnet ef migrations add DepreciationDB --project DepreciationDBApp.Domain
 dotnet ef database update --project DepreciationDBApp.Domain
+
+Scaffolding
+
+dotnet ef dbcontext scaffold "Data Source=JADPA13\SQLSERVER2019;Initial Catalog=DepreciationDB;user=sa;password=123456" Microsoft.EntityFrameworkCore.SqlServer --project DepreciationDBApp.Domain --context-dir DepreciationDBEntities --output-dir Entities --force
+
+Reverse Engineering: https://docs.microsoft.com/en-us/ef/core/managing-schemas/scaffolding?tabs=dotnet-core-cli
